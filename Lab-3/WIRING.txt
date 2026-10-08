@@ -1,0 +1,8 @@
+NUCLEO-L476RG -> 4-pin SSD1306
+--------------------------------
+3.3V          -> VCC
+GND           -> GND
+D15 / PB8     -> SCL (sometimes labeled SCLD)
+D14 / PB9     -> SDA
+
+Project assumes I2C address 0x3C and a 128x64 display.

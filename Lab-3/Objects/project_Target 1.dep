@@ -1,0 +1,55 @@
+Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6240000::V6.24::ARMCLANG
+F (.\main.c)(0x6ABBF419)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/main.o -MMD)
+I (stm32l476xx.h)(0x6AB2ACF6)
+I (C:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x6A8DC8CA)
+I (SysClock.h)(0x6AB2B71C)
+I (LED.h)(0x6AB2ACF6)
+I (UART.h)(0x6AB2B71C)
+I (keypad.h)(0x6AB2ACF6)
+I (OLED_I2C.h)(0x6AB2ACF6)
+I (ssd1306.h)(0x6AB2ACF6)
+I (ssd1306_conf.h)(0x6AB2ACF6)
+I (ssd1306_fonts.h)(0x6AB2ACF6)
+F (.\startup_stm32l476xx.s)(0x6AB2ACF6)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --diag_suppress=A1950W-I.\RTE\_Target_1-IC:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-IC:\Users\khadk\AppData\Local\Arm\Packs\ARM\Keil\STM32L4xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include--pd "__UVISION_VERSION SETA 543"--pd "STM32L476xx SETA 1"--pd "_RTE_ SETA 1"--list .\listings\startup_stm32l476xx.lst--xref -o .\objects\startup_stm32l476xx.o--depend .\objects\startup_stm32l476xx.d)
+F (.\stm32l476xx.h)(0x6AB2ACF6)()
+F (.\LED.c)(0x6AB2ACF6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/led.o -MMD)
+I (LED.h)(0x6AB2ACF6)
+I (stm32l476xx.h)(0x6AB2ACF6)
+I (C:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x6A8DC8CA)
+F (.\SysClock.c)(0x6AB2B71C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/sysclock.o -MMD)
+I (SysClock.h)(0x6AB2B71C)
+I (stm32l476xx.h)(0x6AB2ACF6)
+I (C:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x6A8DC8CA)
+F (.\UART.c)(0x6AB2B71C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/uart.o -MMD)
+I (UART.h)(0x6AB2B71C)
+I (stm32l476xx.h)(0x6AB2ACF6)
+I (C:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x6A8DC8CA)
+F (.\UART_printf.c)(0x6AB2B71C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/uart_printf.o -MMD)
+I (UART.h)(0x6AB2B71C)
+I (stm32l476xx.h)(0x6AB2ACF6)
+I (C:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x6A8DC8CA)
+F (.\keypad.c)(0x6ABBF95E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/keypad.o -MMD)
+I (keypad.h)(0x6AB2ACF6)
+I (stm32l476xx.h)(0x6AB2ACF6)
+I (C:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x6A8DC8CA)
+F (.\OLED_I2C.c)(0x6AB2ACF6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/oled_i2c.o -MMD)
+I (OLED_I2C.h)(0x6AB2ACF6)
+I (stm32l476xx.h)(0x6AB2ACF6)
+I (C:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x6A8DC8CA)
+I (ssd1306_conf.h)(0x6AB2ACF6)
+F (.\ssd1306.c)(0x6AB2ACF6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/ssd1306.o -MMD)
+I (ssd1306.h)(0x6AB2ACF6)
+I (ssd1306_conf.h)(0x6AB2ACF6)
+I (OLED_I2C.h)(0x6AB2ACF6)
+I (stm32l476xx.h)(0x6AB2ACF6)
+I (C:\Users\khadk\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x6A8DC8CA)
+F (.\ssd1306_fonts.c)(0x6AB2ACF6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -D__MICROLIB-I./RTE/_Target_1-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/khadk/AppData/Local/Arm/Packs/ARM/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/ssd1306_fonts.o -MMD)
+I (ssd1306_fonts.h)(0x6AB2ACF6)
+I (ssd1306.h)(0x6AB2ACF6)
+I (ssd1306_conf.h)(0x6AB2ACF6)
+F (.\OLED_I2C.h)(0x6AB2ACF6)()
+F (.\ssd1306.h)(0x6AB2ACF6)()
+F (.\ssd1306_fonts.h)(0x6AB2ACF6)()
+F (.\ssd1306_conf.h)(0x6AB2ACF6)()
+F (.\README.md)(0x6AB2ACF6)()

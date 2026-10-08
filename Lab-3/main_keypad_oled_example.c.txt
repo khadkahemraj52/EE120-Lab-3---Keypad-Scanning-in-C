@@ -1,0 +1,76 @@
+/*
+ * OPTIONAL NEXT STEP
+ * ------------------
+ * This is an example replacement for main.c AFTER the simple Hello test works.
+ * It keeps the original keypad/UART behavior and mirrors the keypad buffer onto
+ * the OLED. Rename/copy this file to main.c when you are ready to integrate it.
+ */
+
+#include "stm32l476xx.h"
+#include "SysClock.h"
+#include "LED.h"
+#include "UART.h"
+#include "keypad.h"
+#include "OLED_I2C.h"
+#include "ssd1306.h"
+#include "ssd1306_fonts.h"
+
+#include <stdint.h>
+
+static void OLED_ShowText(const char *text)
+{
+    ssd1306_Fill(Black);
+    ssd1306_SetCursor(0, 0);
+    ssd1306_WriteString((char *)text, Font_7x10, White);
+    ssd1306_UpdateScreen();
+}
+
+int main(void)
+{
+    int n = 0;
+    char chr;
+    char str[64] = {0};
+
+    System_Clock_Init();
+    LED_Init();
+    UART2_Init();
+    Keypad_Pin_Init();
+
+    OLED_I2C_Init();
+    ssd1306_Init();
+
+    if (OLED_I2C_GetLastStatus() != OLED_I2C_OK) {
+        LED_On();
+        while (1) {
+        }
+    }
+
+    OLED_ShowText("Keypad Ready");
+
+    while (1) {
+        chr = keypad_scan();
+
+        if (chr == '*') {
+            if (n >= 1) {
+                n--;
+            }
+            str[n] = '\0';
+
+            USART_Write(USART2, (uint8_t *)str, (uint32_t)n);
+            OLED_ShowText(str);
+            LED_Toggle();
+        }
+        else if (chr != (char)0xFF) {
+            /* Leave room for the terminating '\0'. */
+            if (n < (int)(sizeof(str) - 1U)) {
+                str[n] = chr;
+                n++;
+                str[n] = '\0';
+            }
+
+            USART_Write(USART2, (uint8_t *)str, (uint32_t)n);
+            OLED_ShowText(str);
+            LED_Toggle();
+        }
+    }
+}
